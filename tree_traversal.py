@@ -10,9 +10,7 @@ def preorder_recursive(root):
 def preorder_iterative(root):
     if not root:
         return
-
     stack = [root]
-
     while stack:
         node = stack.pop()
         print(node)
@@ -31,7 +29,6 @@ def postorder_recursive(root):
 def postorder_iterative_1(root):
     if not root:
         return
-
     lst = []
     stack = [root]
     while stack:
@@ -55,7 +52,6 @@ def inorder_recursive(root):
 def inorder_iterative(root):
     if not root:
         return
-
     stack = []
     while stack or root is not None:
         while root:
