@@ -20,7 +20,7 @@ class Tries:
         node = self.search_prefix(word)
         if node is None:
             return False
-        return self.search_prefix(word).word == word
+        return node.word == word
 
     def search_prefix(self, prefix):
         temp = self.root
