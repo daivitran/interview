@@ -9,7 +9,6 @@ def build_adjacency_list_directed(n, directedEdges):
 
     for edge in directedEdges:
         graph[edge[0]].append(edge[1])
-
     return graph
 
 def build_adjacency_list_undirected(n, undirectedEdges):
