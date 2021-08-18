@@ -1,6 +1,6 @@
 import heapq
 
-# Time complexity: O((V+E)logV) assuming you can decrease priority in O(1)
+# Time complexity: O(VlogV + E). Pop V vertices in O(logV) time. Also traverses all E edges.
 # Space: O(V)
 def dijkstra(source, graph):
     # graph[u].keys() return a list of nodes that u points to,
